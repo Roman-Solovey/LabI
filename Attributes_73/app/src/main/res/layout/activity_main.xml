@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonBlack"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:text="Черный текст"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRed"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edText"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="16dp"
+        android:text="Красный текст"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edText"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Размер 20SP"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBlack"
+        app:layout_constraintStart_toStartOf="@+id/buttonBlack"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBlack"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button40"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="размер 40SP"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRed"
+        app:layout_constraintStart_toStartOf="@+id/buttonRed"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRed"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonWhite"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Белый фон"
+        app:layout_constraintEnd_toEndOf="@+id/button20"
+        app:layout_constraintStart_toStartOf="@+id/button20"
+        app:layout_constraintTop_toBottomOf="@+id/button20"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonYellow"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Желтый фон"
+        app:layout_constraintEnd_toEndOf="@+id/button40"
+        app:layout_constraintStart_toStartOf="@+id/button40"
+        app:layout_constraintTop_toBottomOf="@+id/button40"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
